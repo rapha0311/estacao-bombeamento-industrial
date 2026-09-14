@@ -200,3 +200,51 @@ Novo START
       ↓
 Sistema habilitado
 ```
+
+## 🧪 Testes e validação
+
+O projeto foi submetido a testes funcionais para verificar o comportamento da lógica de controle, dos intertravamentos e do tratamento de falhas.
+
+### Testes realizados
+
+| Teste | Condição aplicada | Resultado esperado | Resultado |
+|---|---|---|---|
+| Partida manual | START + comando manual | Bomba acionada se permissivos estiverem OK | ✅ Aprovado |
+| STOP | STOP durante operação | Bomba desligada | ✅ Aprovado |
+| Partida automática | START + nível baixo | Bomba acionada | ✅ Aprovado |
+| Nível alto | Nível alto durante operação | Bomba desligada | ✅ Aprovado |
+| Falha de sensores | Nível baixo + nível alto simultaneamente | Falha detectada e bomba bloqueada | ✅ Aprovado |
+| Retenção de falha | Falha corrigida sem RESET | Sistema permanece bloqueado | ✅ Aprovado |
+| RESET | RESET após correção da falha | Falha liberada sem partida automática | ✅ Aprovado |
+| Novo START | START após RESET | Sistema volta a ficar habilitado | ✅ Aprovado |
+| START + RESET | Comandos simultâneos | Sistema não deve iniciar indevidamente | ✅ Aprovado |
+| Mudança Manual → Automático | Alteração de modo durante operação | Sistema trata a transição sem partida indevida | ✅ Aprovado |
+| Mudança Automático → Manual | Alteração de modo durante operação | Sistema trata a transição sem manter comando indevido | ✅ Aprovado |
+| Simulação do tanque | Bomba ligada/desligada | Nível aumenta/diminui conforme o estado da bomba | ✅ Aprovado |
+| Contador de ciclos | Partidas sucessivas da bomba | Contador incrementa uma vez por partida | ✅ Aprovado |
+| Horímetro | Bomba em funcionamento | Tempo de operação é acumulado | ✅ Aprovado |
+
+### Exemplo de sequência de falha
+
+Uma das sequências utilizadas para validação foi:
+
+```text
+Operação normal
+      ↓
+Falha de nível detectada
+      ↓
+Bomba desligada
+      ↓
+Falha retida
+      ↓
+Condição de nível corrigida
+      ↓
+Sistema continua bloqueado
+      ↓
+RESET
+      ↓
+Sistema liberado
+      ↓
+Novo START
+      ↓
+Operação retomada
