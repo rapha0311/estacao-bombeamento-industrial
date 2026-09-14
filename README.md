@@ -249,3 +249,61 @@ Novo START
       ↓
 Operação retomada
 ```
+
+## 💻 Linguagens e lógica de programação
+
+O projeto utiliza duas linguagens IEC 61131-3 dentro do CODESYS, cada uma aplicada a uma finalidade específica.
+
+### Ladder Logic (LD)
+
+A lógica principal de controle foi desenvolvida em Ladder.
+
+O Ladder foi utilizado para representar de forma visual a lógica típica de controle industrial, facilitando a análise dos estados, permissivos, intertravamentos e comandos.
+
+Entre as funções implementadas estão:
+
+- Controle da bomba;
+- START e STOP;
+- RESET de falhas;
+- Operação manual e automática;
+- Permissivos de acionamento;
+- Intertravamento por nível alto;
+- Detecção de inconsistência dos sensores;
+- Retenção de falhas;
+- Gerenciamento do estado do sistema;
+- Tratamento das transições entre modos.
+
+### Structured Text (ST)
+
+O Structured Text foi utilizado na camada de simulação do processo.
+
+A simulação permite reproduzir o comportamento do tanque sem a utilização de sensores e atuadores físicos.
+
+A lógica de simulação é responsável por:
+
+- Aumentar o nível do tanque quando a bomba está ligada;
+- Reduzir o nível quando a bomba está desligada;
+- Limitar o nível entre 0% e 100%;
+- Gerar automaticamente as condições de nível baixo e alto;
+- Contabilizar os ciclos da bomba;
+- Acumular o tempo de funcionamento da bomba.
+
+### Por que utilizar duas linguagens?
+
+A utilização das duas linguagens permitiu separar claramente o controle industrial da simulação do processo.
+
+```text
+Ladder Logic
+     │
+     ├── Controle
+     ├── Permissivos
+     ├── Intertravamentos
+     └── Falhas
+     
+Structured Text
+     │
+     ├── Simulação do tanque
+     ├── Sensores simulados
+     ├── Contador de ciclos
+     └── Horímetro
+```
