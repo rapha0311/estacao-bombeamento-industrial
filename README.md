@@ -203,6 +203,33 @@ Novo START
 Sistema habilitado
 ```
 
+### Fluxo de operação automática
+
+O ciclo automático da estação segue a sequência abaixo:
+
+```mermaid
+flowchart TD
+    A[START] --> B[Sistema habilitado]
+    B --> C{Nível baixo?}
+
+    C -- Não --> C
+    C -- Sim --> D{Permissivos OK?}
+
+    D -- Não --> E[Bomba permanece desligada]
+    D -- Sim --> F[Bomba ligada]
+
+    F --> G{Nível alto?}
+
+    G -- Não --> F
+    G -- Sim --> H[Bomba desligada]
+
+    H --> I[Nível do tanque diminui]
+    I --> J{Nível baixo?}
+
+    J -- Não --> I
+    J -- Sim --> D
+```
+
 ## 🧪 Testes e validação
 
 O projeto foi submetido a testes funcionais para verificar o comportamento da lógica de controle, dos intertravamentos e do tratamento de falhas.
