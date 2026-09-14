@@ -48,6 +48,8 @@ Desenvolver e validar uma lógica de controle PLC para uma estação de bombeame
 
 ## 🏗️ Arquitetura do sistema
 
+![Arquitetura do sistema](imagens/arquitetura.png)
+
 O sistema foi estruturado em três camadas principais:
 
 ### 1. Processo
