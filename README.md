@@ -82,7 +82,7 @@ A interface WebVisu permite acompanhar o comportamento do processo e os estados 
 
 O projeto completo está disponível no arquivo abaixo:
 
-👉 **[Baixar projeto CODESYS](./Estacao-Bombeamento-CODESYS.project)**
+👉 **[Baixar projeto CODESYS](./Estacao-Bombeamento-CODESYS_v1.0.project)**
 
 O arquivo pode ser aberto diretamente no CODESYS para análise da lógica Ladder, Structured Text e da interface WebVisu.
 
