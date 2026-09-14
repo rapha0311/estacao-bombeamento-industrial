@@ -290,6 +290,7 @@ A lógica contempla elementos como:
 ![Lógica Ladder do sistema](imagens/ladder-controle-1.png)
 ![Lógica Ladder do sistema](imagens/ladder-controle-2.png)
 ![Lógica Ladder do sistema](imagens/ladder-controle-3.png)
+> **Observação:** a lógica apresentada foi desenvolvida para simular e validar o comportamento do sistema de controle. Em uma aplicação industrial real, os sinais simulados seriam substituídos por entradas e saídas físicas do CLP, sensores e atuadores.
 
 ### Structured Text (ST)
 
