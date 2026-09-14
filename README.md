@@ -181,7 +181,7 @@ No modo automático:
 1. O operador realiza o START;
 2. O sistema é habilitado;
 3. O nível do tanque é monitorado;
-4. Quando o nível atinge a condição de nível baixo, existe uma solicitação de bombeamento;
+4. Quando o sistema está habilitado e o nível atinge a condição de nível baixo, o modo automático solicita o acionamento da bomba, desde que todos os permissivos estejam satisfeitos.
 5. O PLC verifica os permissivos e intertravamentos;
 6. Se todas as condições forem satisfeitas, a bomba é acionada;
 7. O nível do tanque aumenta;
@@ -424,8 +424,12 @@ Estacao-Bombeamento-CODESYS/
 │
 ├── imagens/
 │   ├── ihm-principal.png
-│   ├── ladder-controle.png
+│   ├── ladder-controle-1.png
+│   ├── ladder-controle-2.png
+│   ├── ladder-controle-3.png
 │   └── arquitetura.png
+│
+├── Estacao_Bombeamento_Codesys_v1.0.project
 │
 └── README.md
 ```
