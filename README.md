@@ -78,6 +78,14 @@ Após o desligamento, o nível volta a diminuir até atingir novamente a condiç
 
 A interface WebVisu permite acompanhar o comportamento do processo e os estados do sistema durante a execução.
 
+## 📦 Projeto CODESYS
+
+O projeto completo está disponível no arquivo abaixo:
+
+👉 **[Baixar projeto CODESYS](./Estacao-Bombeamento-CODESYS.project)**
+
+O arquivo pode ser aberto diretamente no CODESYS para análise da lógica Ladder, Structured Text e da interface WebVisu.
+
 ## 🏗️ Arquitetura do sistema
 
 ![Arquitetura do sistema](imagens/arquitetura.png)
