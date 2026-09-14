@@ -396,6 +396,22 @@ Structured Text
      └── Horímetro
 ```
 
+## 🧠 Competências demonstradas
+
+Este projeto demonstra conhecimentos práticos em:
+
+- Programação de CLP utilizando IEC 61131-3;
+- Desenvolvimento de lógica Ladder;
+- Programação em Structured Text;
+- Operação manual e automática;
+- Desenvolvimento de permissivos e intertravamentos;
+- Tratamento e retenção de falhas;
+- Controle de estados do sistema;
+- Simulação de processo industrial;
+- Desenvolvimento de interface HMI/WebVisu;
+- Testes funcionais e validação da lógica de controle;
+- Documentação técnica de sistemas de automação.
+
 ## 📁 Estrutura do projeto
 
 ```text
