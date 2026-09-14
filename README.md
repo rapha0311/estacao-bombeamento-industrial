@@ -355,3 +355,45 @@ Structured Text
      ├── Contador de ciclos
      └── Horímetro
 ```
+
+## 📁 Estrutura do projeto
+
+```text
+Estacao-Bombeamento-CODESYS/
+│
+├── docs/
+│   ├── arquitetura.md
+│   ├── filosofia-de-controle.md
+│   └── testes.md
+│
+├── imagens/
+│   ├── ihm-principal.png
+│   ├── ladder-controle.png
+│   └── arquitetura.png
+│
+└── README.md
+```
+
+## ⚠️ Limitações do projeto
+
+Este projeto foi desenvolvido como uma simulação para estudo, validação da lógica de controle e demonstração das funcionalidades do CODESYS.
+
+Os sensores e atuadores utilizados no processo são simulados por software e não representam I/O físicos de uma instalação industrial real.
+
+A aplicação não contempla dispositivos de segurança certificados, como relés de segurança, cortinas de luz, parada de emergência ou arquitetura de Safety PLC.
+
+Em uma aplicação industrial real, esses elementos seriam definidos de acordo com a análise de riscos, requisitos da máquina e normas aplicáveis.
+
+## 🚀 Possíveis evoluções
+
+Como evolução do projeto, poderiam ser implementados:
+
+- Integração com I/O físicos;
+- Sensores de nível reais;
+- Acionamento da bomba por inversor de frequência;
+- Comunicação com dispositivos industriais;
+- Histórico de alarmes e eventos;
+- Registro de variáveis de processo;
+- Integração com banco de dados;
+- Implementação de dispositivos e funções de segurança conforme análise de riscos;
+- Integração com uma arquitetura SCADA industrial.
