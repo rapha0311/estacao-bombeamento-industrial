@@ -248,3 +248,4 @@ Sistema liberado
 Novo START
       ↓
 Operação retomada
+```
