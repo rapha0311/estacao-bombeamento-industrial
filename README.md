@@ -273,6 +273,24 @@ Entre as funções implementadas estão:
 - Gerenciamento do estado do sistema;
 - Tratamento das transições entre modos.
 
+### Evidência da lógica de controle
+
+A imagem abaixo apresenta parte da lógica Ladder desenvolvida no CODESYS para o controle da estação de bombeamento.
+
+A lógica contempla elementos como:
+
+- gerenciamento dos comandos de operação;
+- permissivos para acionamento da bomba;
+- intertravamentos de processo;
+- tratamento de falhas;
+- retenção e reset de falhas;
+- gerenciamento dos estados do sistema;
+- operação manual e automática.
+
+![Lógica Ladder do sistema](imagens/ladder-controle-1.png)
+![Lógica Ladder do sistema](imagens/ladder-controle-2.png)
+![Lógica Ladder do sistema](imagens/ladder-controle-3.png)
+
 ### Structured Text (ST)
 
 O Structured Text foi utilizado na camada de simulação do processo.
