@@ -46,6 +46,38 @@ Desenvolver e validar uma lógica de controle PLC para uma estação de bombeame
 - PLC Runtime
 - Simulação de processo
 
+## ▶️ Como executar
+
+### Requisitos
+
+- CODESYS;
+- CODESYS Control Win V3 x64;
+- Navegador Web;
+- Sistema operacional Windows.
+
+### Execução do projeto
+
+1. Abrir o projeto no CODESYS.
+2. Selecionar o runtime **CODESYS Control Win V3 x64**.
+3. Conectar o ambiente de desenvolvimento ao runtime.
+4. Realizar o download da aplicação para o runtime.
+5. Executar o programa `PLC_PRG`.
+6. Abrir a visualização `VISU_PRINCIPAL`.
+7. Acessar a interface WebVisu pelo navegador.
+8. Utilizar os comandos START, STOP e RESET para testar o sistema.
+
+### Funcionamento da simulação
+
+Após iniciar o sistema em modo automático, o processo simulado reproduz a variação do nível do tanque.
+
+Quando o nível atinge a condição de nível baixo, o sistema pode solicitar o acionamento da bomba, desde que todos os permissivos estejam satisfeitos.
+
+Com a bomba ligada, o nível do tanque aumenta até atingir a condição de nível alto, provocando o desligamento da bomba.
+
+Após o desligamento, o nível volta a diminuir até atingir novamente a condição de nível baixo, permitindo um novo ciclo.
+
+A interface WebVisu permite acompanhar o comportamento do processo e os estados do sistema durante a execução.
+
 ## 🏗️ Arquitetura do sistema
 
 ![Arquitetura do sistema](imagens/arquitetura.png)
