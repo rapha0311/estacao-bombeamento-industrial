@@ -1,5 +1,7 @@
 # Estação de Bombeamento Industrial — CODESYS + HMI
 
+![Interface HMI da estação de bombeamento](imagens/ihm-principal.png)
+
 Sistema de controle, supervisão e simulação de uma estação de bombeamento industrial desenvolvido no ambiente CODESYS.
 
 O projeto utiliza Ladder Logic para implementação da lógica de controle e Structured Text para simulação do processo, com supervisão e operação através de uma interface WebVisu.
